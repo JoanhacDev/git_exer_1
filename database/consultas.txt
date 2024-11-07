@@ -1,5 +1,18 @@
-
-
+// Consulta para crear la tabla users
+create table users(
+primernombre varchar(20) not null,
+segundnombre varchar(20) not null,
+primerapellido varchar(20) not null,
+segundoapellido varchar(20) not null,
+telefono varchar(10) not null,
+fechanacimiento date not null,
+rh varchar(3) not null,
+direccion varchar(50) not null,
+correo varchar(100) not null,
+ciudad varchar(40) not null,
+nidentificacion varchar(10) not null,
+ocupacion varchar(30) not null
+);
 
 // Consulta para insertar un usuario
 INSERT INTO users(1nombre,2nombre,1apellido,2apellido,telefono,fechanacimiento,rh,direccion,correo,ciudad,nidentificacion,ocupacion) 
