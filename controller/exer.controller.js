@@ -1,15 +1,15 @@
-const path = require('path');
+// Controlador de rutas
 const execController = {
     login: async (req, res) => {
-        res.sendFile(path.join(__dirname, '../login.html'));
+        res.render('login')
     },
 
     home: async (req, res) => {
-        res.sendFile(path.join(__dirname, '../home.html'));
+        res.render('home')
     },
 
     info: async (req, res) => {
-        res.sendFile(path.join(__dirname, '../info.html'));
+        res.render('info')
     }
 }
 

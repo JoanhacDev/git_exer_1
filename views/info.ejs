@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Personales de _name_</title>
+    <!-- Links externos -->
+    <%- include('partials/links') %>
+</head>
+<body class="min-vh-100 d-flex flex-column bg-success-subtle" data-bs-theme="dark">
+    
+    <!-- Navegación -->
+    <%- include('partials/nav') %>
+
+    <!-- Contenido -->
+    <main class="flex-grow-1 d-flex align-items-center justify-content-center flex-column p-5">
+        <h1>Datos Personales de _name_</h1>
+        <!-- Formulario -->
+        <form class="mt-3 bg-success p-5 rounded-3" style="--bs-bg-opacity: .2; width: 800px;">
+            <!-- Campos de nombres-->
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="inputFirstName" class="form-label">Primer nombre</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-success-subtle" id="basic-addon1"><i class="ph ph-user"></i></span>
+                        <input type="text" id="inputFirstName" class="form-control bg-success-subtle" aria-label="firstName" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputMiddleName" class="form-label">Segundo nombre</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-success-subtle" id="basic-addon2"><i class="ph ph-user"></i></span>
+                        <input type="text" id="inputMiddleName" class="form-control bg-success-subtle" aria-label="middleName" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+            </div>
+            <!-- Campos de apellidos-->
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="inputFirstSurname" class="form-label">Primer apellido</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-success-subtle" id="basic-addon1"><i class="ph ph-user"></i></span>
+                        <input type="text" id="inputFirstSurname" class="form-control bg-success-subtle" aria-label="firstSurname" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputSecondSurname" class="form-label">Segundo apellido</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-success-subtle" id="basic-addon2"><i class="ph ph-user"></i></span>
+                        <input type="text" id="inputSecondSurname" class="form-control bg-success-subtle" aria-label="secondSurname" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+            </div>
+            <!-- Campo de telefono y fecha de nacimiento-->
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="inputPhone" class="form-label">Teléfono</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-success-subtle" id="basic-addon1"><i class="ph ph-phone"></i></span>
+                        <input type="text" id="inputPhone" class="form-control bg-success-subtle" aria-label="phone" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputBirthDate" class="form-label">Fecha de nacimiento</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-success-subtle" id="basic-addon2"><i class="ph ph-cake"></i></span>
+                        <input type="text" id="inputBirthDate" class="form-control bg-success-subtle" aria-label="birthDate" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+            </div>
+            <!-- Campo tipo de sangre y dirección -->
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="inputRH" class="form-label">Tipo de sangre</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-success-subtle" id="basic-addon1"><i class="ph ph-drop"></i></span>
+                        <input type="text" id="inputRH" class="form-control bg-success-subtle" aria-label="RH" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputAddress" class="form-label">Dirección</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-success-subtle" id="basic-addon2"><i class="ph ph-map-pin"></i></span>
+                        <input type="text" id="inputAddress" class="form-control bg-success-subtle" aria-label="address" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+            </div>
+            <!-- Campos de email y ciudad -->
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-success-subtle" id="basic-addon1"><i class="ph ph-envelope-simple"></i></span>
+                        <input type="text" id="inputEmail" class="form-control bg-success-subtle" aria-label="email" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Ciudad</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-success-subtle" id="basic-addon2"><i class="ph ph-city"></i></span>
+                        <input type="text" id="inputCity" class="form-control bg-success-subtle" aria-label="city" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+            </div>
+            <!-- Campos de identificación y ocupación -->
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="input#ID" class="form-label">N. Identificación</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-success-subtle" id="basic-addon1"><i class="ph ph-identification-card"></i></span>
+                        <input type="text" id="input#ID" class="form-control bg-success-subtle" aria-label="#ID" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputOccupation" class="form-label">Ocupación</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-success-subtle" id="basic-addon2"><i class="ph ph-briefcase"></i></span>
+                        <input type="text" id="inputOccupation" class="form-control bg-success-subtle" aria-label="occupation" aria-describedby="basic-addon2">
+                    </div>
+                </div>
+            </div>
+            <a href="/home" class="btn btn-success mt-3">Volver</a>
+        </form>
+    </main>
+
+    <!-- Pie de pagina -->
+    <%- include('partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <!-- Links externos -->
+    <%- include('partials/links') %>
+</head>
+<body class="min-vh-100 d-flex flex-column bg-success-subtle" data-bs-theme="dark">
+    <!-- Contenido -->
+    <main class="flex-grow-1 d-flex align-items-center justify-content-center">
+        <!-- Formulario de inicio de sesión -->
+        <form action="/login" method="post" class="bg-success p-5 rounded-3" style="--bs-bg-opacity: .2; width: 400px;">
+            <div class="text-center mb-4"> 
+                <h1>Inicio de sesión</h1>
+            </div>
+            <!-- Campo de primer nombre -->
+            <div class="input-group mb-3">
+                <span class="input-group-text bg-success-subtle"><i class="ph ph-user"></i></span>
+                <div class="form-floating">
+                    <input type="text" class="bg-success-subtle form-control" id="inputFirstName" placeholder="First name">
+                    <label for="inputFirstName">First name</label>
+                </div>
+            </div>
+            <!-- Campo de password -->
+            <div class="input-group mb-3">
+                <span class="input-group-text bg-success-subtle"><i class="ph ph-password"></i></span>
+                <div class="form-floating">
+                    <input type="text" class="bg-success-subtle form-control" id="inputPassword" placeholder="Password">
+                    <label for="inputPassword">Password</label>
+                </div>
+            </div>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-success">Iniciar sesión</button>
+            </div>
+        </form>
+    </main>
+    <!-- Pie de página -->
+    <%- include('partials/footer') %>
+</body>
+</html>
