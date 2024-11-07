@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenido</title>
+    <title>Bienvenido <%= name %></title>
     <!-- Links externos -->
     <%- include('partials/links') %>
 </head>
-<body class="min-vh-100 d-flex flex-column bg-success-subtle" data-bs-theme="dark">
+<body class="min-vh-100 d-flex flex-column bg-danger-subtle" data-bs-theme="dark">
     <!-- Navegación -->
     <%- include('partials/nav') %>
 
     <!-- Contenido -->
     <main class="flex-grow-1 d-flex align-items-center justify-content-center flex-column">
-        <h1>Bienvenido _name_</h1>
-        <a href="/home/info" class="btn btn-success mt-3">Ver información</a>
+        <h1>Bienvenido <%= name %></h1>
+        <a href="/home/info" class="btn btn-danger mt-3">Ver información</a>
     </main>
 
     <!-- Pie de página -->

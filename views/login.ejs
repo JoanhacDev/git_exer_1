@@ -7,32 +7,32 @@
     <!-- Links externos -->
     <%- include('partials/links') %>
 </head>
-<body class="min-vh-100 d-flex flex-column bg-success-subtle" data-bs-theme="dark">
+<body class="min-vh-100 d-flex flex-column bg-danger-subtle" data-bs-theme="dark">
     <!-- Contenido -->
     <main class="flex-grow-1 d-flex align-items-center justify-content-center">
         <!-- Formulario de inicio de sesión -->
-        <form action="/login" method="post" class="bg-success p-5 rounded-3" style="--bs-bg-opacity: .2; width: 400px;">
+        <form action="/logueando" method="post" class="bg-danger p-5 rounded-3" style="--bs-bg-opacity: .2; width: 400px;">
             <div class="text-center mb-4"> 
                 <h1>Inicio de sesión</h1>
             </div>
             <!-- Campo de primer nombre -->
             <div class="input-group mb-3">
-                <span class="input-group-text bg-success-subtle"><i class="ph ph-user"></i></span>
+                <span class="input-group-text bg-danger-subtle"><i class="ph ph-user"></i></span>
                 <div class="form-floating">
-                    <input type="text" class="bg-success-subtle form-control" id="inputFirstName" placeholder="First name">
+                    <input type="text" class="bg-danger-subtle form-control" id="inputFirstName" placeholder="First name" name="inputFirstName">
                     <label for="inputFirstName">First name</label>
                 </div>
             </div>
             <!-- Campo de password -->
             <div class="input-group mb-3">
-                <span class="input-group-text bg-success-subtle"><i class="ph ph-password"></i></span>
+                <span class="input-group-text bg-danger-subtle"><i class="ph ph-password"></i></span>
                 <div class="form-floating">
-                    <input type="text" class="bg-success-subtle form-control" id="inputPassword" placeholder="Password">
+                    <input type="text" class="bg-danger-subtle form-control" id="inputPassword" placeholder="Password" name="inputPassword">
                     <label for="inputPassword">Password</label>
                 </div>
             </div>
             <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-success">Iniciar sesión</button>
+                <button type="submit" class="btn btn-danger">Iniciar sesión</button>
             </div>
         </form>
     </main>

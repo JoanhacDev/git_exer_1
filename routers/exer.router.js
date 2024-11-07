@@ -9,6 +9,8 @@ router.get('/', execController.login)
 router.get('/home', execController.home)
 router.get('/home/info', execController.info)
 
+router.post('/logueando', execController.logueando)
+
 // Exportacion del modulo
 
 module.exports = router;

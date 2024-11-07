@@ -1,0 +1,6 @@
+
+
+
+// Consulta para insertar un usuario
+INSERT INTO users(1nombre,2nombre,1apellido,2apellido,telefono,fechanacimiento,rh,direccion,correo,ciudad,nidentificacion,ocupacion) 
+VALUES('Joan', 'Esteban', 'Ibica', 'Naranjo', '3118375189', '2007-09-20', 'O+', 'Calle 18 N 51 - 09', 'programadorjh20@gmail.com', 'Arauca', '1116859748', 'Developer');
